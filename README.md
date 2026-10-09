@@ -1,6 +1,6 @@
 # Horizon Write
 
-Horizon Write is a writing app for texts that must get the law and the rules right: opinions, memos, articles, course notes. You write on a page, and in coming versions every sentence is checked against the law, rules and sources you choose, with each finding showing the passage it rests on, starting with Belgian VAT. This first version is the writing app itself: the page, your files, versions, import from Word and export to Word and PDF. It belongs to the Horizon suite, next to [Horizon](https://github.com/BartJanCoppens/Horizon) for presentations and [Horizon Calc](https://github.com/BartJanCoppens/Horizon-Calc-Releases) for spreadsheets.
+Horizon Write is a writing app for texts that must get the law and the rules right: opinions, memos, articles, course notes. You write on a page, and in coming versions every sentence is checked against the law, rules and sources you choose, with each finding showing the passage it rests on, starting with Belgian VAT. So far it is the writing app (the page, your files, versions, import from Word and export to Word and PDF) and the knowledge the check will use: knowledge packs, with Belgian VAT built in, your own sources and the facts of your case. It belongs to the Horizon suite, next to [Horizon](https://github.com/BartJanCoppens/Horizon) for presentations and [Horizon Calc](https://github.com/BartJanCoppens/Horizon-Calc-Releases) for spreadsheets.
 
 It works on **Mac**, **Windows** and **Linux**. It's free and needs no account.
 
@@ -73,6 +73,14 @@ Horizon Write opens on an empty page: start typing. Along the top is a menu bar:
 - **Versions**: **File › Save a version…** (`⇧⌘S`) keeps the text as it is now under a name, and **File › Versions…** brings an earlier one back. Versions travel inside the saved file.
 - **Word, Markdown and text**: **File › Import…** turns a Word (`.docx`), Markdown or text file into a new document, keeping headings, lists, bold, italic and quotes.
 - **Sharing**: **File › Export to Word…** saves a `.docx`, and **File › Export to PDF…** a PDF of the page.
+- **Knowledge**: the **Knowledge** menu and the Knowledge panel (**View › Knowledge panel**) keep everything the check will use, each with a switch:
+  - knowledge packs: **Add pack…**, with the Belgian VAT pack built in;
+  - your own sources: PDF, Word or text documents read on your computer, web pages with passages you quote, and pasted passages;
+  - the facts of your case (assumptions) and your own rules;
+  - a vocabulary of allowed values, such as the VAT rates;
+  - your definitions.
+
+  All of it travels inside the saved file. The check that uses it arrives in the next version.
 
 **Help › Horizon Write Help** (`F1`) explains everything, with a page of keyboard shortcuts.
 
