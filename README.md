@@ -1,6 +1,6 @@
 # Horizon Write
 
-Horizon Write is a writing app for texts that must get the law and the rules right: opinions, memos, articles, course notes. You write on a page, and in coming versions every sentence is checked against the law, rules and sources you choose, with each finding showing the passage it rests on, starting with Belgian VAT. So far it is the writing app (the page, your files, versions, import from Word and export to Word and PDF) and the knowledge the check will use: knowledge packs, with Belgian VAT built in, your own sources and the facts of your case. It belongs to the Horizon suite, next to [Horizon](https://github.com/BartJanCoppens/Horizon) for presentations and [Horizon Calc](https://github.com/BartJanCoppens/Horizon-Calc-Releases) for spreadsheets.
+Horizon Write is a writing app for texts that must get the law and the rules right: opinions, memos, articles, course notes. You write on a page, and an AI checks every sentence against the law, rules and sources you choose, starting with Belgian VAT. Each finding shows the passage it rests on, and the app checks every answer of the AI before it shows it. Around the check is a full writing app: the page, your files, versions, import from Word and export to Word and PDF. It belongs to the Horizon suite, next to [Horizon](https://github.com/BartJanCoppens/Horizon) for presentations and [Horizon Calc](https://github.com/BartJanCoppens/Horizon-Calc-Releases) for spreadsheets.
 
 It works on **Mac**, **Windows** and **Linux**. It's free and needs no account.
 
@@ -67,28 +67,31 @@ Horizon Write then appears in your applications menu.
 
 ## 3. Getting started
 
-Horizon Write opens on an empty page: start typing. Along the top is a menu bar: **File**, **Edit**, **Format** and **Help**. **Format** has headings, bold and italic, bulleted and numbered lists, and quotes, and the usual keys work (`⌘B`, `⌘I` and so on; on Windows and Linux, Ctrl instead of ⌘). The first heading is the document's title.
+Horizon Write opens on an empty page: start typing. Along the top is a menu bar: **File**, **Edit**, **Format**, **Knowledge**, **Check**, **View** and **Help**. **Format** has headings, bold and italic, bulleted and numbered lists, and quotes, and the usual keys work (`⌘B`, `⌘I` and so on; on Windows and Linux, Ctrl instead of ⌘). Select some text and a small bar with the same formats appears just above it. The first heading is the document's title. **Edit › Find…** (`⌘F`) finds words in the text.
 
-- **Your files**: **File › Save** (`⌘S`) saves the document as a `.hwrite` file wherever you choose; double-click one to open it again. Horizon Write also keeps the open document as you type, so closing the app or a crash loses nothing.
+**Help › Open the example** opens a short sample tax opinion with a mistake of each kind, the quickest way to see the check at work.
+
+- **Your files**: **File › Save** (`⌘S`) saves the document as a `.hwrite` file wherever you choose; double-click one to open it again. Horizon Write also keeps a draft of each document as you type, so closing the app or a crash loses nothing; **File › Unsaved drafts** opens the others.
 - **Versions**: **File › Save a version…** (`⇧⌘S`) keeps the text as it is now under a name, and **File › Versions…** brings an earlier one back. Versions travel inside the saved file.
 - **Word, Markdown and text**: **File › Import…** turns a Word (`.docx`), Markdown or text file into a new document, keeping headings, lists, bold, italic and quotes.
-- **Sharing**: **File › Export to Word…** saves a `.docx`, and **File › Export to PDF…** a PDF of the page.
-- **Knowledge**: the **Knowledge** menu and the Knowledge panel (**View › Knowledge panel**) keep everything the check will use, each with a switch:
+- **Sharing**: **File › Export to Word…** saves a `.docx`, and **File › Export to PDF…** a PDF of the page. **File › Export findings report** saves the check's findings as a web page or a spreadsheet.
+- **Knowledge**: the **Knowledge** menu and the Knowledge panel (**View › Knowledge panel**) keep everything the check uses, each with a switch:
   - knowledge packs: **Add pack…**, with the Belgian VAT pack built in;
   - your own sources: PDF, Word or text documents read on your computer, web pages with passages you quote, and pasted passages;
   - the facts of your case (assumptions) and your own rules;
   - a vocabulary of allowed values, such as the VAT rates;
   - your definitions.
 
-  All of it travels inside the saved file. The check that uses it arrives in the next version.
+  All of it travels inside the saved file.
+- **The check**: **Check › Check document** checks every sentence against the knowledge switched on, and **Check paragraph** the paragraph you're in. Each flagged sentence is underlined by what was found: contradicted, holds only if something is true, needs a definition, not backed yet, and more. **View › Findings panel** lists them, and `F8` goes to the next one. Right-click an underline to see the evidence and the rules it rests on, and to **Assume this**, **Accept anyway**, or let the AI suggest a better wording, add a missing condition or define a term. A safety point is saved before every change the AI makes, and **Edit › Undo AI update** takes it back.
 
 **Help › Horizon Write Help** (`F1`) explains everything, with a page of keyboard shortcuts.
 
-Your documents stay on your computer: Horizon Write sends them nowhere.
+Your documents stay on your computer. Only the text you check goes to the AI you chose, with the knowledge switched on; with Ollama or LM Studio, nothing leaves your computer at all.
 
-## 4. Connect an AI (optional)
+## 4. Connect an AI
 
-This version doesn't use AI yet. The sentence check and **New with AI** in coming versions will, and you can already connect a model in **File › Models & keys…**: Claude, OpenAI, Gemini, OpenRouter, Mistral, Groq, DeepSeek, or models you run yourself with Ollama or LM Studio (no key; on this computer, nothing leaves it). **Get a key** opens the provider's page, **Add key…** stores it, and **Test** checks it. Keys are stored encrypted by your computer's keychain and only ever sent to their own provider.
+The check needs an AI; without one, only the vocabulary of allowed values is checked. Connect one in **File › Models & keys…**: Claude, OpenAI, Gemini, OpenRouter, Mistral, Groq, DeepSeek, or models you run yourself with Ollama or LM Studio (no key; on this computer, nothing leaves it). **Get a key** opens the provider's page, **Add key…** stores it, and **Test** checks it. Keys are stored encrypted by your computer's keychain and only ever sent to their own provider.
 
 ## Updates
 
